@@ -1,0 +1,334 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+:root {
+  /* change the values below to your colors from your palette */
+  --primary-color: #15a3ef;
+  --secondary-color: #414649;
+  --accent1-color: #212426;
+  --accent2-color: #3fb5d4;
+
+  /* change the values below to your chosen font(s) */
+  --heading-font: "PT Serif", serif;
+  --paragraph-font: "Roboto", sans-serif;
+
+  /* these colors below should be chosen from among your palette colors above */
+  --headline-color-on-white: #15a3ef; /* headlines on a white background */
+  --headline-color-on-color: white; /* headlines on a colored background */
+  --paragraph-color-on-white: #212426; /* paragraph text on a white background */
+  --paragraph-color-on-color: white; /* paragraph text on a colored background */
+  --paragraph-background-color: #15a3ef;
+  --nav-link-color: white;
+  --nav-background-color: #15a3ef;
+  --nav-hover-link-color: #414649;
+  --nav-hover-background-color: #3fb5d4;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--paragraph-font);
+}
+
+/* header */
+
+header {
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  grid-template-rows: 90px;
+  padding: 0 50px;
+  position: fixed;
+  width: 100%;
+  background-color: var(--nav-background-color);
+  z-index: 30;
+}
+
+#logoLink {
+  display: flex;
+  gap: 1.6rem;
+  align-items: center;
+  text-decoration: none;
+  color: var(--nav-link-color);
+}
+
+#logoLink > img {
+  height: 60%;
+  border-radius: 3px;
+}
+
+#logoLink > span {
+  font-size: 1.2rem;
+  transition: .3s all;
+}
+
+#logoLink > span:hover {
+  color: var(--paragraph-color-on-white);
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+nav > a {
+  text-decoration: none;
+  font-size: 1.3rem;
+  color: var(--nav-link-color);
+  height: 100%;
+  padding: 0 20px;
+  display: grid;
+  place-items: center;
+  transition: 0.3s all;
+}
+
+nav > a:hover {
+  background-color: var(--nav-hover-background-color);
+  color: var(--nav-hover-link-color);
+}
+
+/* footer */
+footer {
+  display: grid;
+  height: 200px;
+  grid-template: repeat(3, 1fr) / 1fr;
+  justify-content: center;
+  justify-items: center;
+  /* padding: 10px 0; */
+  background-color: var(--accent1-color);
+  color: var(--nav-link-color);
+}
+
+footer > ul {
+  list-style: none;
+  display: flex;
+  gap: 5rem;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.1rem;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+.footerLink {
+  color: var(--nav-hover-link-color);
+  color: var(--headline-color-on-color);
+  transition: 0.3s all;
+}
+
+.footerLink:hover {
+  color: var(--headline-color-on-white);
+}
+
+footer > div {
+  display: grid;
+  place-items: center;
+  color: var(--headline-color-on-white);
+}
+
+#sitePlanLink {
+  color: var(--headline-color-on-white);
+  transition: 0.3s all;
+}
+
+#sitePlanLink:hover {
+  color: var(--nav-link-color);
+}
+
+footer > span {
+  display: grid;
+  place-items: center;
+  color: var(--headline-color-on-white);
+}
+
+/*-------- Home page --------*/
+#heroHome {
+  padding-top: 90px;
+  display: grid;
+  height: 100vh;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+}
+
+/* Left - text */
+#heroHome > div {
+  width: 60%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+#heroHome h1 {
+  font-family: var(--heading-font);
+  font-size: 3.5rem;
+  color: var(--accent1-color);
+}
+
+#heroHome p {
+  color: var(--secondary-color);
+}
+
+#heroHome-linksContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+#heroHome-linksContainer > a {
+  text-decoration: none;
+  width: 150px;
+  height: 45px;
+  display: grid;
+  place-items: center;
+  border-radius: 30px;
+  font-weight: 500;
+  transition: 0.3s all;
+}
+
+#projectsLink {
+  background-color: var(--nav-hover-link-color);
+  color: var(--nav-link-color);
+}
+
+#projectsLink:hover {
+  background-color: var(--nav-hover-background-color);
+}
+
+#contactLink {
+  background-color: white;
+  color: var(--accent1-color);
+  border: 2px solid var(--accent1-color);
+}
+
+#contactLink:hover {
+  background-color: var(--nav-hover-background-color);
+  border: 2px solid var(--nav-hover-background-color);
+  color: var(--nav-link-color);
+}
+
+/* Right - image */
+#heroImg {
+  height: 70%;
+  width: 80%;
+  object-fit: cover;
+  grid-row: 1/2;
+  grid-column: 2/3;
+  border-radius: 10px;
+  max-height: 500px;
+}
+
+/* findSection */
+#findSection {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* grid-template-rows: 300px; */
+  width: 80%;
+  margin: auto;
+  gap: 4rem;
+  justify-items: center;
+}
+
+.findSection-card {
+  grid-row: 1fr;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.findSection-card > div {
+  height: 70px;
+  width: 70px;
+  background-color: var(--nav-background-color);
+  opacity: 80%;
+  border-radius: 20px;
+}
+
+.findSection-card > div > img {
+  padding: 18px;
+  height: 100%;
+  color: white;
+}
+
+.findSection-card > h4 {
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.findSection-card > p {
+  color: var(--nav-hover-link-color);
+  text-align: center;
+  line-height: 1.4rem;
+}
+
+#youllFind {
+  grid-column: 1/2;
+}
+
+#goodCandidate {
+  grid-column: 2/3;
+}
+
+#projectsMore {
+  grid-column: 3/4;
+}
+
+/* elsewhereSection */
+#elsewhereSection {
+  width: 80%;
+  margin: auto;
+}
+
+#elsewhereSection > p {
+  line-height: 1.6rem;
+  margin: 80px 0 20px;
+  color: var(--accent1-color);
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+
+#finalPart {
+  height: calc(100vh - 200px - 90px);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 2rem;
+}
+
+#finalPart > div {
+  grid-column: 1/2;
+  grid-row: 1fr;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+#finalPart > div > h3 {
+  font-weight: 500;
+  font-size: 2.2rem;
+}
+
+#finalPart > div > p {
+  line-height: 1.4rem;
+  padding: 0 40px 0 0;
+  color: var(--nav-hover-link-color);
+}
+
+#finalPart > img {
+  height: 60%;
+  width: 100%;
+  max-height: 500px;
+  max-width: 700px;
+  object-fit: cover;
+  border-radius: 10px;
+  grid-column: 2/3;
+  grid-row: 1fr;
+}

@@ -3,12 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/style.css" />
     <title>Portfolio | Home</title>
   </head>
   <body>
     <header>
-      <a href="index.html">
-        <img src="./images/logo.png" alt="Logo" />
+      <a href="index.html" id="logoLink">
+        <img src="./images/logo.png" alt="Logo" id="logo" />
         <span>Harold Carazas</span>
       </a>
       <nav>
@@ -18,7 +19,7 @@
       </nav>
     </header>
     <main>
-      <section>
+      <section id="heroHome">
         <div>
           <h1>Full Stack Web Developer</h1>
           <p>
@@ -26,15 +27,21 @@
             see from now on: the reason why I am the candidate that fits your
             projects or company.
           </p>
-          <div>
-            <a href="projects.html">SEE PROJECTS</a>
-            <a href="contact.html">CONTACT</a>
+          <div id="heroHome-linksContainer">
+            <a href="projects.html" id="projectsLink" target="_blank"
+              >SEE PROJECTS</a
+            >
+            <a href="contact.html" id="contactLink" target="_blank">CONTACT</a>
           </div>
         </div>
-        <img src="./images/page1/harold.jpg" alt="Harold Carazas" />
+        <img
+          src="./images/page1/harold.jpg"
+          alt="Harold Carazas"
+          id="heroImg"
+        />
       </section>
-      <section>
-        <div>
+      <section id="findSection">
+        <div id="youllFind" class="findSection-card">
           <div><img src="./images/page1/svg/check.svg" alt="" /></div>
           <h4>What you'll find here</h4>
           <p>
@@ -43,7 +50,7 @@
             good practices when programming.
           </p>
         </div>
-        <div>
+        <div id="goodCandidate" class="findSection-card">
           <div><img src="./images/page1/svg/flag.svg" alt="" /></div>
           <h4>A good candidate</h4>
           <p>
@@ -56,7 +63,7 @@
             important value that I can bring to you.
           </p>
         </div>
-        <div>
+        <div id="projectsMore" class="findSection-card">
           <div><img src="./images/page1/svg/star.svg" alt="" /></div>
           <h4>Projects and more</h4>
           <p>
@@ -68,45 +75,46 @@
           </p>
         </div>
       </section>
-      <section>
-        <div>
-          <p>
-            There is information that I consider very necessary for my website
-            to offer so that you, my dear visitor, can obtain what you are
-            looking for. For example, you need to have a list of the skills that
-            I have learned over the course of my career as a web developer. In
-            addition, it is very important that you see a very friendly and
-            intuitive list of my public projects carried out over the course of
-            my time as a programmer. Lastly, I consider that having a way to
-            contact me, such as by phone number, email, Facebook, and LinkedIn,
-            is of utmost importance.
-          </p>
-          <p>
-            Why should I get this information on this website? Why not look
-            elsewhere?
-          </p>
-          <p>
-            I would like to tell you that my website offers a wide variety of
-            technologies that I have learned during my career, which can give
-            you the security that whoever you will work with is someone you
-            trust who seeks the best performance and scalability of the projects
-            you work on. So, if you want to see this, and much more, I invite
-            you to stay on my website.
-          </p>
+      <section id="elsewhereSection">
+        <p>
+          There is information that I consider very necessary for my website to
+          offer so that you, my dear visitor, can obtain what you are looking
+          for. For example, you need to have a list of the skills that I have
+          learned over the course of my career as a web developer. In addition,
+          it is very important that you see a very friendly and intuitive list
+          of my public projects carried out over the course of my time as a
+          programmer. Lastly, I consider that having a way to contact me, such
+          as by phone number, email, Facebook, and LinkedIn, is of utmost
+          importance.
+        </p>
+        <div id="finalPart">
+          <div>
+            <h3>
+              Why should I get this information on this website? Why not look
+              elsewhere?
+            </h3>
+            <p>
+              I would like to tell you that my website offers a wide variety of
+              technologies that I have learned during my career, which can give
+              you the security that whoever you will work with is someone you
+              trust who seeks the best performance and scalability of the
+              projects you work on. So, if you want to see this, and much more,
+              I invite you to stay on my website.
+            </p>
+          </div>
+          <img src="./images/page1/php.jpg" alt="Code" />
         </div>
-        <img src="./images/page1/php.jpg" alt="Code" />
       </section>
-      t
     </main>
     <footer>
       <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="index.html" class="footerLink">Home</a></li>
+        <li><a href="projects.html" class="footerLink">Projects</a></li>
+        <li><a href="contact.html" class="footerLink">Contact</a></li>
       </ul>
       <div>
         <span>My Portfolio</span>
-        <a href="site-plan.html" target="_blank">Site Plan</a>
+        <a href="site-plan.html" target="_blank" id="sitePlanLink">Site Plan</a>
       </div>
       <span>&copy; Harold Carazas</span>
     </footer>
