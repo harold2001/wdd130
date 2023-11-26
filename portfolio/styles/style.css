@@ -58,7 +58,7 @@ header {
 
 #logoLink > span {
   font-size: 1.2rem;
-  transition: .3s all;
+  transition: 0.3s all;
 }
 
 #logoLink > span:hover {
