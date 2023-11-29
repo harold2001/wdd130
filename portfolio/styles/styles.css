@@ -227,7 +227,6 @@ footer > span {
 #findSection {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  /* grid-template-rows: 300px; */
   width: 80%;
   margin: auto;
   gap: 4rem;
@@ -235,7 +234,6 @@ footer > span {
 }
 
 .findSection-card {
-  grid-row: 1fr;
   width: 80%;
   display: flex;
   flex-direction: column;
@@ -304,7 +302,6 @@ footer > span {
 
 #finalPart > div {
   grid-column: 1/2;
-  grid-row: 1fr;
   width: 90%;
   display: flex;
   flex-direction: column;
@@ -330,5 +327,4 @@ footer > span {
   object-fit: cover;
   border-radius: 10px;
   grid-column: 2/3;
-  grid-row: 1fr;
 }
