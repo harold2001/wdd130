@@ -716,4 +716,77 @@ main {
     min-height: 500px;
     justify-content: center;
   }
+
+  /*-------- Contacts page --------*/
+  #footerContact {
+    height: 160px;
+  }
+
+  #mainContact {
+    width: 1110px;
+    margin: auto;
+    min-height: calc(100vh - 160px);
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    padding: 90px 0 0;
+    justify-items: center;
+    gap: 5rem;
+  }
+
+  #imgsContainer {
+    grid-row: 1/2;
+    height: 100%;
+    width: 100%;
+    grid-template-rows: repeat(4, 120px);
+    grid-template-columns: repeat(4, 120px);
+    justify-content: center;
+    gap: 0;
+    align-content: center;
+  }
+
+  #imgsContainer > img {
+    height: 100%;
+    width: 100%;
+  }
+
+  #imgsContainer > img:nth-child(1) {
+    grid-column: 1/3;
+    grid-row: 1/3;
+  }
+
+  #imgsContainer > img:nth-child(2) {
+    grid-column: 2/4;
+    grid-row: 2/4;
+    z-index: 30;
+  }
+
+  #imgsContainer > img:nth-child(3) {
+    grid-column: 3/5;
+    grid-row: 3/5;
+  }
+
+  #textContainer {
+    display: flex;
+    flex-direction: column;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    width: 80%;
+    align-items: start;
+    gap: 4rem;
+  }
+
+  #text-information > h1 {
+    font-size: 3.5rem;
+    text-align: start;
+  }
+
+  #text-contact {
+    display: flex;
+    width: 100%;
+  }
+
+  #text-contact img {
+    height: 60%;
+    width: 60%;
+  }
 }
